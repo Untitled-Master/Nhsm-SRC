@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHSM SRC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Your ultimate resource center for CS students at Estin.">
+    <meta name="keywords" content="NHSM, esi, nhsm bib, nhsm tresor, nhsm repo, nhsm exom nhsm src, National Higher School of Mathematics, المدرسة العليا للرياضيات, المدرسة الوطنية للرياضيات">
+    <meta name="author" content="Ahmed Belmehnouf">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        .navbar, footer {
+            background-color: #141414;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-brand:hover {
+            color: #972222;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+        }
+
+        .nav-link:hover {
+            color: #972222;
+        }
+
+        .hero-section {
+            background-color: #1d0e12;
+            color: #FFFFFF;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .btn-red {
+            background-color: #772D42;
+            color: #FFFFFF;
+        }
+
+        .btn-red:hover {
+            background-color: #992a4e;
+            color: #FFFFFF;
+        }
+
+        .card {
+            background-color: #141414;
+            border: none;
+            color: #FFFFFF;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        table {
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        table th, table td {
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px 0;
+        }
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ca1044;
+        }
+
+        /* iOS-inspired Table Design */
+        .table {
+            border-radius: 12px;
+            overflow: hidden; /* Ensures rounded corners work properly */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .table th, 
+        .table td {
+            padding: 15px 20px; /* Increased padding for a more open look */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light bottom border for rows */
+        }
+
+        .table th {
+            background-color: rgba(255, 255, 255, 0.1); /* Subtle background for headers */
+            font-weight: 600; /* Emphasize the table headers */
+            text-transform: uppercase;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.05); /* Slightly darker background on hover */
+            transition: background-color 0.3s ease;
+        }
+
+        .table-responsive {
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        /* Flex container for semesters */
+        .semester-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Individual semester sections */
+        .semester-section {
+            flex: 1;
+            margin: 20px;
+            max-width: 48%;
+        }
+
+        @media (max-width: 768px) {
+            .semester-section {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .table th, .table td {
+                padding: 12px 10px;
+            }
+
+            .table {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-book"></i> NHSM SRC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/untitledmaster/"><i class="fas fa-globe"></i> Contribute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Untitled-Master"><i class="fab fa-github"></i> Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/untitledmaster/"><i class="fas fa-code"></i> Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#first-year"><i class="fas fa-book"></i> First Year</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <img src="android-chrome-512x512.png" alt="Estin SRC Logo" class="mb-4" style="max-width: 250px;">
+            <h1>Welcome to NHSM SRC</h1>
+            <p>Your ultimate resource center for MHSM students.</p>
+            <a href="#first-year" class="btn btn-red btn-lg mt-4"><i class="fas fa-arrow-circle-right"></i> Get Started</a>
+        </div>
+    </section>
+
+    <!-- First Year Section -->
+    <section id="first-year">
+        <div class="container">
+            <h2 class="text-center"><i class="fas fa-book"></i> First Year Resources</h2>
+
+            <!-- Flex Container for Semesters -->
+            <div class="semester-container">
+                <!-- Semester 1S -->
+                <div class="semester-section">
+                    <h3 class="mt-5 text-center">1st Semester (1S)</h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover mt-3">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-book"></i> Module</th>
+                                    <th><i class="fas fa-file-alt"></i> TD</th>
+                                    <th><i class="fas fa-chalkboard-teacher"></i> Lectures</th>
+                                    <th><i class="fas fa-file"></i> Exams</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Algebra I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1uZ6tUu6Qjg5ewgWr0G18ARctRb-X9Ide"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1w-oKTToIQkcWyzeQJOBZuX8TBdQHKSth"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/13fcKCqZfMcCVZQnHWhwzOiA5pI5Ug099"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Analysis I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1uCT4SWp5xJUWe9geMKoverFgwmqve_pw"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/17trYn2mgoiMjf-j_r3-UrmN7CoTAO5u7"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/14LK9xCkMeKzq8uGNGc2llMaplDX35oUX"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ASD I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1vGcdSDWLHekc7hC1G7NASxEvUvBDNWsK"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1wPrxJIugHoSPQyhT1mkA9qwFJ1A1Bi1A"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1a2-Agc2gdLHWP3-Bw6NwpLEZpSgLvsbz"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Discrete Mathematics I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1unsWyb2bmK5mWBFkmtfUP4Xq6Su2KvCS"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1a-bjMG1Q12hZeAKAuTwKKL3kTUQ3sH-P"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/151yOKpHbNSHAvL2PH2kVVdJItYuutdyW"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td><a href="/"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="/"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="/"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>History of Mathematics</td>
+                                    <td><a href="/"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="/"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="/"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Physics I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1vdU07GpPbl8D9tWrPZf8fVaapqHKRJa4"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Ep9dstabvB-aTqaNwqiJjQzf0b9nFTAQ"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/14jbPNKYQ62SHBajACy-m4DxVlqUoy7ei"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Statistics</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1ut2zPLb9d6k4SEI27WhNi-o6zxdVYXYs"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1aiw5gqVxpsHGBQ7AFyroNWaoUcOmXCyr"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1J2zO5ZNbCBWck22YwUK2VAI_SzojBzlr"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Semester 2S -->
+                <div class="semester-section">
+                    <h3 class="mt-5 text-center">2nd Semester (2S)</h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover mt-3">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-book"></i> Module</th>
+                                    <th><i class="fas fa-file-alt"></i> TD</th>
+                                    <th><i class="fas fa-chalkboard-teacher"></i> Lectures</th>
+                                    <th><i class="fas fa-file"></i> Exams</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Algebra II</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PN9qGaGc4u6nZpU_BDPr-ExaDxj0OSj8"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PKMQHrUNEFtINnEpqjle14JMON_tnAHI"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/19awwYv0ZS6JwTPFhAGOeg0vXocgm3U9f"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Analysis II</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PTL9hdKxDUBveRcH_hf1T-gBLUiCB-Qf"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PRBtv45Zr0_kQkPnwwjqtaTtWC5K5lZX"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Axs6R-hxVi2E3cNGSJ7Dv0BKu6k8L3E5"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ASD II</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1BZVFhQt6Nh_U8F5n0lthmHlUvsYONzRz"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PVebudbi3qQZ2LqfsAo-RWCpNdc6IdKT"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1C3xo712_q5i8xJYzZEU6j98iq-0yu_iM"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Discrete Mathematics II</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Pe8pWGbPKVowKPu24bwSmNsJKSMDDyE1"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href=""><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PcgjAmXMQ7wFYUAeYJNCzdX_X-IOrdqT"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>English II</td>
+                                    <td><a href="/"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PEOZSzlQF_XBagSaJPZ-KNSn0QM-_y_C"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="/"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematical Logic</td>
+                                    <td><a href="/"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1CYPRY78cE-4rzSY97FdrSaQaAVrJyb44"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1CRjeNZhn3tZyCJmfTZyw7gNVEL4ei_wI"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Physics II</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1PlNZ87bmmiuQniIGtWS2sOzsO9phAvDT"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Ph68sCfQbrjSreIS9ZgSxdYrVW6OwGJl"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1DJaONLowPWgXcnWtQhDSgYrF_W7aTJ6U"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Probability I</td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Pw8FV4IlZUDX-o4hEKUpu2GjO8nZFsQU"><i class="fas fa-file-alt"></i> TD</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1Plp5iM8njmhYU27Kf4V5b7P-O8xj47qC"><i class="fas fa-chalkboard-teacher"></i> Lectures</a></td>
+                                    <td><a href="https://drive.google.com/drive/folders/1EVDOy73Ol_qhfMdACpVEn5B7hyL5MLgP"><i class="fas fa-file"></i> Exams</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Estin SRC - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
